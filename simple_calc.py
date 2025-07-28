@@ -2,31 +2,31 @@ import math
 import time
 
 def add(x,y):
-    print(x+y)
+    return (x+y)
 
 def subtraction(x,y):
-    print(x-y)
+    return (x-y)
 
 def multiply(x,y):
-    print(x*y)
+    return (x*y)
 
 def division(x,y):
     if y==0 :
         print('Division by 0 is not possible')
     else:
-        print(round(x/y))
+        return (round(x/y))
 
 def percent(x,y):
-    print(x*(y/100))
+    return (x*(y/100))
 
 def exponent(x,y):
-    print(pow(x,y))
+    return (pow(x,y))
 
 def squareroot(x):
-    print(math.sqrt(x))
+    return (math.sqrt(x))
 
 def remainders(x,y):
-    print(x % y)
+    return (x % y)
 
 def onlynumbers(e):
     while True:
@@ -51,41 +51,49 @@ while True:
     if Choice == 1:
         x = onlynumbers('Type the 1st number : \n')
         y = onlynumbers('Type the 2nd number : \n')
-        multiply(x,y)
+        result = multiply(x,y)
+        print(result)
 
     elif Choice == 2:
         x = onlynumbers('Type the 1st number : \n')
         y = onlynumbers('Type the 2nd number : \n')
-        division(x,y)
+        result = division(x,y)
+        print(result)
 
     elif Choice == 3:
         x = onlynumbers('Type the 1st number : \n')
         y = onlynumbers('Type the 2nd number : \n')
-        add(x,y)
+        result = add(x,y)
+        print(result)
 
     elif Choice == 4:
         x = onlynumbers('Type the 1st number : \n')
         y = onlynumbers('Type the 2nd number : \n')
-        subtraction(x,y)
+        result = subtraction(x,y)
+        print(result)
 
     elif Choice == 5:
         x = onlynumbers('Type the Whole number : \n')
         y = onlynumbers('Type the Percentage of that you want : \n')
-        percent(x,y)
+        result = percent(x,y)
+        print(result)
 
     elif Choice == 6:
         x = onlynumbers('Type the Number you want exponent of : \n')
         y = onlynumbers('Type the exponent : \n')
-        exponent(x,y)
+        result = exponent(x,y)
+        print(result)
 
     elif Choice == 7:
         x = onlynumbers('Type the Number you want square root of : \n')
-        squareroot(x)
+        result = squareroot(x)
+        print(result)
 
     elif Choice == 8:
         x = onlynumbers('Type the 1st number : \n')
         y = onlynumbers('Type the 2nd number : \n')
-        remainders(x,y)
+        result = remainders(x,y)
+        print (result)
 
     elif Choice == 9:
         print('Bye!')
