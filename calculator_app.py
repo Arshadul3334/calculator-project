@@ -6,6 +6,7 @@ from kivy.uix.image import Image
 from kivy.uix.button import Button
 from kivy.uix.textinput import TextInput
 from simple_calc import add , subtraction , multiply , division , onlynumbers
+from kivy.core.window import Window
 
 
 
@@ -119,8 +120,9 @@ class CalculatorLayout(GridLayout):
 
 
 class Calculator(App):
-    icon = 'calculator.jpg'     
+    icon = 'calculator.ico' 
     def build(self):
+        Window.icon = self.icon  
         self.title = "Calculator"
         return CalculatorLayout()
     
