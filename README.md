@@ -1,6 +1,6 @@
 Simple Calculator
 
-Made using kivy , Includes support for light/dark themes and basic arithmetic functions.
+My first app Made using kivy , Includes support for light/dark themes and basic arithmetic functions.
 
 To run :
 
